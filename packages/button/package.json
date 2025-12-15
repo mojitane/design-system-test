@@ -1,8 +1,13 @@
 {
-  "name": "@acme/ui",
+  "name": "@mojitane/button",
   "version": "0.0.0",
   "sideEffects": false,
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mojitane/design-system-test.git",
+    "directory": "packages/button"
+  },
   "exports": {
     "./button": {
       "types": "./src/button.tsx",
@@ -18,17 +23,18 @@
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
-    "eslint": "^8.57.0",
     "@repo/typescript-config": "workspace:*",
-    "tsup": "^8.0.2",
-    "typescript": "5.5.4"
+    "@types/react": "^18.3.27",
+    "@types/react-dom": "^18.3.7",
+    "eslint": "^8.57.0",
+    "tsup": "^8.5.1",
+    "typescript": "5.9.3"
   },
   "dependencies": {
-    "react": "^18.2.0"
+    "react": "^18.3.1"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/"
   }
 }
