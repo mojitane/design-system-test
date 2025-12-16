@@ -1,6 +1,6 @@
 {
   "name": "@mojitane/input",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "sideEffects": false,
   "license": "MIT",
   "repository": {
@@ -8,9 +8,13 @@
     "url": "https://github.com/mojitane/design-system-test.git",
     "directory": "packages/input"
   },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
   "exports": {
     "./input": {
-      "types": "./src/input.tsx",
+      "types": "./dist/input.d.ts",
       "import": "./dist/input.mjs",
       "require": "./dist/input.js"
     }
