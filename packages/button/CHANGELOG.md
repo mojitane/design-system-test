@@ -1,5 +1,11 @@
 # @mojitane/button
 
+## 1.0.0
+
+### Major Changes
+
+- 319cbfd: Its red now
+
 ## 0.1.0
 
 ### Minor Changes
