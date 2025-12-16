@@ -1,13 +1,7 @@
 name: Canary Release
 
 on:
-  push:
-    branches-ignore:
-      - develop
-      - main
-      - master
-
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+  workflow_dispatch:
 
 permissions:
   contents: read
