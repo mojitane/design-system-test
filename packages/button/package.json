@@ -1,6 +1,7 @@
 {
   "name": "@mojitane/button",
   "version": "3.2.0",
+  "type": "module",
   "sideEffects": false,
   "license": "MIT",
   "repository": {
@@ -14,26 +15,25 @@
   ],
   "exports": {
     "types": "./dist/button.d.ts",
-    "import": "./dist/button.mjs",
-    "require": "./dist/button.js"
+    "import": "./dist/button.mjs"
   },
   "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
+    "build": "tsdown",
+    "dev": "tsdown --watch",
     "lint": "eslint . --max-warnings 0",
     "clean": "rm -rf .turbo node_modules dist"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
-    "@types/react": "^18.3.27",
-    "@types/react-dom": "^18.3.7",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "eslint": "^8.57.0",
-    "tsup": "^8.5.1",
+    "tsdown": "^0.18.0",
     "typescript": "5.9.3"
   },
   "dependencies": {
-    "react": "^18.3.1"
+    "react": "^19.2.3"
   },
   "publishConfig": {
     "access": "public",

@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "build:packages": "turbo run build --filter=./packages/*",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
     "clean": "turbo run clean && rm -rf node_modules",
@@ -17,6 +18,6 @@
     "prettier": "^3.7.4",
     "turbo": "^2.6.3"
   },
-  "packageManager": "pnpm@8.15.9",
+  "packageManager": "pnpm@10.26.0",
   "name": "design-system"
 }

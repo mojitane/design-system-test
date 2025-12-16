@@ -3,8 +3,6 @@ export interface InputProps
   placeholder?: string;
 }
 
-export function Input({ placeholder, ...other }: InputProps): JSX.Element {
+export function InputComponent({ placeholder, ...other }: InputProps): React.JSX.Element {
   return <input type="text" placeholder={placeholder} {...other} />;
 }
-
-Input.displayName = "Input";

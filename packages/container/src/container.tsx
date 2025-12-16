@@ -4,7 +4,7 @@ export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
 }
 
-export function Container({ children, className, ...other }: ContainerProps): JSX.Element {
+export function ContainerComponent({ children, className, ...other }: ContainerProps): React.JSX.Element {
   return (
     <div {...other} className={`p-4 border rounded-lg ${className}`}>
       {children}
@@ -12,6 +12,3 @@ export function Container({ children, className, ...other }: ContainerProps): JS
     </div>
   );
 }
-
-Container.displayName = "Container";
-
