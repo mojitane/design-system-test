@@ -146,6 +146,9 @@ importers:
 
   packages/input:
     dependencies:
+      '@mojitane/container':
+        specifier: workspace:*
+        version: link:../container
       react:
         specifier: ^18.3.1
         version: 18.3.1
