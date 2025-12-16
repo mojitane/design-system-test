@@ -95,6 +95,37 @@ importers:
         specifier: 5.9.3
         version: 5.9.3
 
+  packages/container:
+    dependencies:
+      '@mojitane/button':
+        specifier: workspace:*
+        version: link:../button
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
+    devDependencies:
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../eslint-config
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
+      '@types/react':
+        specifier: ^18.3.27
+        version: 18.3.27
+      '@types/react-dom':
+        specifier: ^18.3.7
+        version: 18.3.7(@types/react@18.3.27)
+      eslint:
+        specifier: ^8.57.0
+        version: 8.57.1
+      tsup:
+        specifier: ^8.5.1
+        version: 8.5.1(typescript@5.9.3)
+      typescript:
+        specifier: 5.9.3
+        version: 5.9.3
+
   packages/eslint-config:
     devDependencies:
       '@vercel/style-guide':
