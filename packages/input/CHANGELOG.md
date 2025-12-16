@@ -1,5 +1,11 @@
 # @mojitane/input
 
+## 1.1.2
+
+### Patch Changes
+
+- @mojitane/container@0.0.2
+
 ## 1.1.1
 
 ### Patch Changes

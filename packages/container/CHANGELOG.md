@@ -1,5 +1,12 @@
 # @mojitane/container
 
+## 0.0.2
+
+### Patch Changes
+
+- Updated dependencies [ea0dd39]
+  - @mojitane/button@3.2.0
+
 ## 0.0.1
 
 ### Patch Changes

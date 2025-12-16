@@ -1,5 +1,11 @@
 # @mojitane/button
 
+## 3.2.0
+
+### Minor Changes
+
+- ea0dd39: One more button update
+
 ## 3.1.0
 
 ### Minor Changes
