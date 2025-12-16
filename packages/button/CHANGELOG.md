@@ -1,5 +1,12 @@
 # @mojitane/button
 
+## 3.0.0
+
+### Major Changes
+
+- 0dedd42: One more, is it still 3?
+- d8cc04b: Changed import path to non subpath
+
 ## 2.0.0
 
 ### Major Changes
