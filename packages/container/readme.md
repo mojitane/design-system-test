@@ -11,11 +11,11 @@ The `Container` component is a React functional component that provides a simple
 ## Usage
 
 ```tsx
-import { Container } from '@mojitane/container';
+import { Container } from "@mojitane/container";
 
 <Container className="my-custom-class">
   <p>Some content here</p>
-</Container>
+</Container>;
 ```
 
 This will render your content inside a styled container, along with a button labeled "Container Button".

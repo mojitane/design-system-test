@@ -7,4 +7,3 @@ export default defineConfig({
   sourcemap: true,
   external: ["react", "react/jsx-runtime"],
 });
-
