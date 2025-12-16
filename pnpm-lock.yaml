@@ -94,7 +94,6 @@ importers:
       typescript:
         specifier: 5.9.3
         version: 5.9.3
-    publishDirectory: dist
 
   packages/eslint-config:
     devDependencies:
@@ -141,7 +140,6 @@ importers:
       typescript:
         specifier: 5.9.3
         version: 5.9.3
-    publishDirectory: dist
 
   packages/typescript-config: {}
 
