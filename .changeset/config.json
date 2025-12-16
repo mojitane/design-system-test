@@ -7,6 +7,9 @@
   "baseBranch": "develop",
   "access": "public",
   "updateInternalDependencies": "patch",
+  "snapshot": {
+    "useCalculatedVersion": true
+  },
   "ignore": [
     "@dstm/docs"
   ]
