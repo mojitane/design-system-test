@@ -4,6 +4,7 @@
   "commit": false,
   "fixed": [],
   "linked": [],
+  "baseBranch": "develop",
   "access": "public",
   "updateInternalDependencies": "patch",
   "ignore": [
