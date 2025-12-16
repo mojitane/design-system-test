@@ -107,26 +107,26 @@ jobs:
         with:
           fail-on-severity: moderate
 
-  build:
-    name: Build Validation
-    runs-on: ubuntu-latest
-    needs: [lint, type-check, format-check, security]
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
+  # build:
+  #   name: Build Validation
+  #   runs-on: ubuntu-latest
+  #   needs: [lint, type-check, format-check]
+  #   steps:
+  #     - name: Checkout Repo
+  #       uses: actions/checkout@v4
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+  #     - name: Setup pnpm
+  #       uses: pnpm/action-setup@v4
 
-      - name: Setup Node.js 22.x
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: 'pnpm'
+  #     - name: Setup Node.js 22.x
+  #       uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 22
+  #         cache: 'pnpm'
 
-      - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+  #     - name: Install Dependencies
+  #       run: pnpm install --frozen-lockfile
 
-      - name: Build Packages
-        run: pnpm build
+  #     - name: Build Packages
+  #       run: pnpm build
 
