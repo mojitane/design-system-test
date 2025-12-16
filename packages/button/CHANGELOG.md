@@ -1,5 +1,11 @@
 # @mojitane/button
 
+## 1.1.0
+
+### Minor Changes
+
+- 11c2526: Fix dist output scope
+
 ## 1.0.0
 
 ### Major Changes

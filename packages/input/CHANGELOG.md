@@ -1,5 +1,11 @@
 # @mojitane/input
 
+## 0.2.0
+
+### Minor Changes
+
+- 11c2526: Fix dist output scope
+
 ## 0.1.0
 
 ### Minor Changes
