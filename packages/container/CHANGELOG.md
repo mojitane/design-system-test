@@ -1,5 +1,16 @@
 # @mojitane/container
 
+## 1.0.0
+
+### Major Changes
+
+- fea64a7: Switch build to tsdown
+
+### Patch Changes
+
+- Updated dependencies [fea64a7]
+  - @mojitane/button@4.0.0
+
 ## 0.0.2
 
 ### Patch Changes
