@@ -1,6 +1,6 @@
 {
   "name": "@mojitane/container",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "sideEffects": false,
   "license": "MIT",
   "repository": {
@@ -41,4 +41,3 @@
     "registry": "https://npm.pkg.github.com/"
   }
 }
-
