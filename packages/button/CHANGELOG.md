@@ -1,5 +1,11 @@
 # @mojitane/button
 
+## 2.0.0
+
+### Major Changes
+
+- 10c05fe: Fix build
+
 ## 1.1.0
 
 ### Minor Changes

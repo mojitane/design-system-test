@@ -1,5 +1,11 @@
 # @mojitane/input
 
+## 1.0.0
+
+### Major Changes
+
+- 10c05fe: Fix build
+
 ## 0.2.0
 
 ### Minor Changes
