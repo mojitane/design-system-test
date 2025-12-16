@@ -1,5 +1,15 @@
 # @mojitane/input
 
+## 1.1.0
+
+### Minor Changes
+
+- 0dedd42: Minor level change
+
+### Patch Changes
+
+- 0dedd42: Smaller change
+
 ## 1.0.0
 
 ### Major Changes
