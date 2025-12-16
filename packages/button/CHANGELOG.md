@@ -1,5 +1,11 @@
 # @mojitane/button
 
+## 4.0.1
+
+### Patch Changes
+
+- 99fd1a9: Small change in styling
+
 ## 4.0.0
 
 ### Major Changes
