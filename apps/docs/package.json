@@ -7,7 +7,7 @@
     "dev": "storybook dev -p 6006",
     "build": "storybook build --docs",
     "preview-storybook": "serve storybook-static",
-    "lint": "eslint ./stories/*.stories.tsx --max-warnings 0",
+    "lint": "eslint ./stories/*.stories.tsx --max-warnings 0 --no-error-on-unmatched-pattern",
     "type-check": "tsc --noEmit",
     "clean": "rm -rf .turbo node_modules"
   },
