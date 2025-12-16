@@ -8,9 +8,13 @@
     "url": "https://github.com/mojitane/design-system-test.git",
     "directory": "packages/button"
   },
+  "files": [
+    "dist",
+    "CHANGELOG.md"
+  ],
   "exports": {
     "./button": {
-      "types": "./src/button.tsx",
+      "types": "./dist/button.d.ts",
       "import": "./dist/button.mjs",
       "require": "./dist/button.js"
     }
