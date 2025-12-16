@@ -1,0 +1,61 @@
+name: Canary Release
+
+on:
+  push:
+    branches:
+      - '**'
+    branches-ignore:
+      - develop
+      - main
+      - master
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  canary:
+    name: Publish Canary Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+
+      - name: Setup Node.js 22.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: 'https://npm.pkg.github.com/'
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Check for Changesets
+        id: changesets
+        run: |
+          if [ -n "$(find .changeset -name '*.md' -type f 2>/dev/null)" ]; then
+            echo "has_changesets=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changesets=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Snapshot Version
+        if: steps.changesets.outputs.has_changesets == 'true'
+        run: pnpm changeset version --snapshot canary
+
+      - name: Build Packages
+        if: steps.changesets.outputs.has_changesets == 'true'
+        run: pnpm build
+
+      - name: Publish Canary Release
+        if: steps.changesets.outputs.has_changesets == 'true'
+        run: pnpm -r publish --tag canary --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
