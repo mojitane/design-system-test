@@ -29,7 +29,13 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Check for Changesets
-        run: pnpm changeset status --verbose
+        run: |
+          STATUS=$(pnpm changeset status --verbose)
+          echo "$STATUS"
+          if echo "$STATUS" | grep -q "NO packages" && ! echo "$STATUS" | grep -q "Packages to be bumped"; then
+            echo "No changesets found, aborting pipeline"
+            exit 1
+          fi
 
       - name: Run Lint
         run: pnpm ci:check
