@@ -13,7 +13,8 @@
     "version-packages": "changeset version",
     "release": "turbo run build && changeset publish",
     "preview-storybook": "turbo run preview-storybook",
-    "ci:publish": "turbo run build && pnpm -r publish --no-git-checks && changeset tag"
+    "ci:publish": "turbo run build && pnpm -r publish --no-git-checks && changeset tag",
+    "ci:check": "turbo run lint type-check && pnpm format:check"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.8",
